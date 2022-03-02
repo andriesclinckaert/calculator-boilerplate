@@ -115,7 +115,7 @@ export default function App() {
       }
     }
     console.log("calculator", observation)
-    window.parent.postMessage(observation, "http://localhost:6006")
+    window.parent.postMessage(observation, "*")
     helpers.resetForm({ values })
   }, [])
   return (
